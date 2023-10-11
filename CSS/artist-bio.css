@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url(../IMG/Artist-Background.jpg);
+}
+
+#page-title {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.artist-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.artist-card {
+  background-color: rgb(222, 222, 222);
+  width: 95%;
+  padding: 15px;
+  border: 5px gold solid;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.artist-card img {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+@media screen and (min-width: 490px) and (max-width: 1000px) {
+  .artist-card {
+    flex-direction: row;
+    width: 480px;
+    height: 310px;
+  }
+
+  .artist-card-text {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 10000px) {
+  .artist-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .artist-card {
+    flex-direction: row;
+    width: 480px;
+    height: 310px;
+  }
+
+  .artist-card-text {
+    padding-left: 20px;
+  }
+}

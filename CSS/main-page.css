@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* Quote styles */
+.quote-container {
+  background-image: url(../IMG/pattern1.jpg);
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#message-post {
+  width: 70%;
+  border-radius: 25px;
+}
+
+@media (min-width: 360px) {
+  #message-post {
+    width: 250px;
+  }
+}
+
+/* Albums Expo Styles*/
+.abulms-expo {
+  background-image: url(../IMG/back-black-sea.gif);
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 28px;
+  font-family: 'Roboto Slab', serif;
+  display: block;
+}
+
+figure {
+  background-color: rgba(255, 255, 255, 0.159);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 80%;
+  height: auto;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+figure img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  box-shadow: 5px;
+  box-shadow: 1px 1px 100px 5px #ffffff;
+  transition: 0.8s;
+}
+
+figure img:hover {
+  width: 85%;
+  cursor: pointer;
+}
+
+figure article {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 451px) and (max-width: 10000px){
+  .cover-choice {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  figure {
+    width: 250px;
+    margin: 10px;
+  }
+
+  figure img {
+    width: 180px;
+  }
+
+  figure img:hover {
+    width: 200px;
+    cursor: pointer;
+  }
+}
+
+.footer-nav {
+  margin: 0px;
+}
+
+.footer-ul {
+  margin: 0px;
+}

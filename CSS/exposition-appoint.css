@@ -1,0 +1,196 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url(../IMG/background.jpg);
+}
+
+/* Form Styles */
+.form-display {
+    background-color: rgba(39, 39, 39, 0.7);
+    width: 95%;
+    height: auto;
+    border-radius: 25px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    width: 100%;
+    height: auto;
+}
+
+legend {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: aliceblue;
+    padding: 5px 0px;
+    display: block;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    align-self: center;
+}
+
+/* Calendar Styles */
+.calendar-container {
+    background-color: rgba(39, 39, 39, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    width: 95%;
+    height: auto;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+@media (min-width: 390px) {
+    .calendar-container {
+        width: 390px;
+    }
+}
+
+.days-layout {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.day {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.selected {
+    background-color: orangered;
+}
+
+.appoint {
+    background-color: sandybrown;
+}
+
+
+@media screen and (min-width: 491px) and (max-width: 570px) {
+    .form-backgound {
+        background-image: url(../IMG/buterfly.gif);
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        border-radius: 25px;
+    }
+
+    .form-display {
+        width: 70%;
+        height: auto;
+        margin: 0px;
+    }
+
+    li {
+        color: white;
+      }
+}
+
+@media (min-width: 490px) {
+    .form-backgound {
+        width: 450px;
+    }
+}
+
+
+@media screen and (min-width: 571px) and (max-width: 900px) {
+
+    
+    .form-backgound {
+        background-image: url(../IMG/buterfly.gif);
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        border-radius: 25px;
+    }
+
+    .form-display {
+        width: 70%;
+        height: auto;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 10000px) {
+    .main-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .form-backgound {
+        background-image: url(../IMG/buterfly.gif);
+        background-size: cover;
+        width: 450px;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        border-radius: 25px;
+    }
+
+    .form-display {
+        width: 70%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .calendar-container {
+        margin-top: 60px;
+    }
+}
